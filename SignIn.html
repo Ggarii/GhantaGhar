@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+
+    <!-- For CSS -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- For icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container forms">
+      <div class="form-login">
+        <div class="form-content">
+          <form action="#">
+            <h1>Sign In</h1>
+            <p>For security, please sign in to access your information.</p>
+            <br />
+            <label for="email"><b>Email or Phone</b></label>
+            <br />
+            <div class="field input-field">
+              <input
+                type="email"
+                placeholder="Email or Phone"
+                name="email"
+                class="input"
+                required
+              />
+            </div>
+            <br />
+
+            <label for="password"><b>Password</b></label>
+            <br />
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                class="password"
+                required
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <br />
+
+            <div class="field button-field">
+              <button>Sign in</button>
+            </div>
+            <div class="form-link">
+              <a href="#" class="link signup-link">Create account</a>
+            </div>
+            <div class="forgotPass-link">
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <div class="line"></div>
+
+            <div class="media-options">
+              <a href="#" class="field google">
+                <img
+                  src="./images/google-icon.png"
+                  alt="Google"
+                  class="google-img"
+                />
+                <span>Google</span>
+              </a>
+            </div>
+            <p id="agreement">
+              By signing in, I agree to GG's <a href="#"> Terms of use </a> and
+              <a href="#"> Privacy Policy</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
