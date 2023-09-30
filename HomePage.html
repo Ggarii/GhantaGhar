@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+
+  <!-- Bootstrap CSS CDN links -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <!-- Custom CSS links -->
+  <link rel="stylesheet" href="CSS/HomePage.css" />
+  <link rel="stylesheet" href="CSS/responsive_style.css" />
+
+  <body>
+    <!-- Navbar -->
+    <header class="header-wrapper">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo.jpg"
+              alt="Logo"
+              width="70"
+              height="30"
+              class="img-fluid"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav menu-navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#favourites">
+                  <i class="fas fa-heart"></i>
+                  Favourites</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#places">
+                  <i class="far fa-building"></i>
+                  List your Place</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="./images/nepal-icon.png"
+                    alt="nepal-icon"
+                    width="15"
+                    height="15"
+                    class="img-fluid"
+                  />
+
+                  Nepal
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link " href="#">
+                  <i class="fas fa-user"></i>
+                  Login/Signup</a
+                > -->
+                <button class="main-btn" onclick="">
+                  <i class="fas fa-user"></i>
+                  Login/Signup
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar exit -->
+
+    <!-- Banner -->
+    <section id="home" class="banner_wrapper pd-0">
+      <div
+        class="banner_background_img d-flex justify-content-center align-items-center"
+      >
+        <div class="outer_booking_container">
+          <div class="btn_container btn-group-lg">
+            <button
+              id="btn_1"
+              class="btn btn-secondary"
+              onclick="showShortStay()"
+            >
+              Short Stay
+            </button>
+            <button
+              id="btn_2"
+              class="btn btn-secondary"
+              onclick="showLongStay()"
+            >
+              Long Stay
+            </button>
+          </div>
+          <div class="container booking-area">
+            <!-- default  -->
+            <div id="shortstay_booking">
+              <form class="row">
+                <div class="purpose">
+                  <select class="form-select form-select-lg mb-3">
+                    <option selected>Select your Purpose</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="rest">Rest</option>
+                    <option value="C">C</option>
+                    <option value="d">D</option>
+                    <option value="E">E</option>
+                  </select>
+                </div>
+
+                <div class="location_search">
+                  <i class="fas fa-search"></i>
+                  <input
+                    class="form-control me-2 form-select-lg mb-3"
+                    type="search"
+                    placeholder="   Search by location"
+                    aria-label="Search"
+                  />
+                </div>
+
+                <div class="col-lg mb-3mb-lg-0">
+                  <input type="date" class="form-control" placeholder="Date" />
+                </div>
+                <div class="col-lg mb-3mb-lg-0">
+                  <select class="form-select">
+                    <option selected>Time in hrs</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="col-lg mb-3mb-lg-0">
+                  <select class="form-select">
+                    <option selected>Adults</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="search-btn">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- for long stay -->
+            <div id="longstay_booking">
+              <form class="row">
+                <div class="purpose">
+                  <select class="form-select form-select-lg mb-3">
+                    <option selected>Select your Purpose</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="rest">Rest</option>
+                    <option value="C">C</option>
+                    <option value="d">D</option>
+                    <option value="E">E</option>
+                  </select>
+                </div>
+
+                <div class="location_search">
+                  <i class="fas fa-search"></i>
+                  <input
+                    class="form-control me-2 form-select-lg mb-3"
+                    type="search"
+                    placeholder="   Search by location"
+                    aria-label="Search"
+                  />
+                </div>
+
+                <div class="col-lg mb-3mb-lg-0">
+                  <input type="date" class="form-control" placeholder="Date" />
+                </div>
+
+                <div class="col-lg mb-3mb-lg-0">
+                  <input type="date" class="form-control" placeholder="Date" />
+                </div>
+                <div class="col-lg mb-3mb-lg-0">
+                  <select class="form-select">
+                    <option selected>Adults</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="search-btn">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top places -->
+    <section class="top_places_wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h3>Top rated places to stay according to our GG</h3>
+          </div>
+        </div>
+
+        <div class="row m-0">
+          <div class="col-md-4 mb-4 mb-lg-o">
+            <div class="hotel-items">
+              <img src="./images/background-img.jpg" class="img-fluid" />
+              <div class="hotel-content">
+                <span class="hotel-name">Hotel Annapurna</span>
+                <br />
+                <span class="hotel-address"> Bouddha,Ktm</span>
+                <br />
+                <span class="hotel-price">Rs.200/hr</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 mb-lg-o">
+            <div class="hotel-items">
+              <img src="./images/background-img.jpg" class="img-fluid" />
+              <div class="hotel-content">
+                <span class="hotel-name">Hotel Sagarmatha</span>
+                <br />
+                <span class="hotel-address"> Bouddha,Ktm</span>
+                <br />
+                <span class="hotel-price">Rs.200/hr</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 mb-lg-o">
+            <div class="hotel-items">
+              <img src="./images/background-img.jpg" class="img-fluid" />
+              <div class="hotel-content">
+                <span class="hotel-name">Hotel Mount Everest</span>
+                <br />
+                <span class="hotel-address"> Bouddha,Ktm</span>
+                <br />
+                <span class="hotel-price">Rs.200/hr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Js CDN links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="JavaScript/script.js"></script>
+  </body>
+</html>

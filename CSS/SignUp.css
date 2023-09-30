@@ -29,6 +29,12 @@ form {
   /* height: fit-content; */
 }
 
+/* #signin {
+  position: fixed;
+  top: 10vh;
+  left: 65vh;
+} */
+
 /* .form {
   position: absolute;
 } */
@@ -173,4 +179,5 @@ a.google span {
   font-size: 20px;
   padding-left: 8px;
 }
+
 /* color: #744920 #9c6f44; */

@@ -18,3 +18,17 @@ pwShowHide.forEach((eyeIcon) => {
     });
   });
 });
+
+// For long stay button of homepage
+const longStay = document.querySelector("#longstay_booking");
+const shortStay = document.querySelector("#shortstay_booking");
+
+let showLongStay = function () {
+  longStay.style.display = "block";
+  shortStay.style.display = "none";
+};
+
+let showShortStay = function () {
+  longStay.style.display = "none";
+  shortStay.style.display = "block";
+};
