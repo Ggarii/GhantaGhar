@@ -16,9 +16,20 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   />
 
+  <!-- Swiper CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<!-- Icons -->
+<link
+href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+rel="stylesheet"
+/>
+
   <!-- Custom CSS links -->
-  <link rel="stylesheet" href="CSS/HomePage.css" />
-  <link rel="stylesheet" href="CSS/responsive_style.css" />
+  <link rel="stylesheet" href="CSS/SignUp.css" />
 
   <body>
     <!-- Navbar -->
@@ -83,15 +94,12 @@
                     class="img-fluid"
                   />
 
-                  Nepal
+                  Nep
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Eng</a></li>
+                  <li><a class="dropdown-item" href="#">...</a></li>
+                  <li><a class="dropdown-item" href="#">..</a></li>                      
                 </ul>
               </li>
               <li class="nav-item">
@@ -250,46 +258,1696 @@
           </div>
         </div>
 
-        <div class="row m-0">
-          <div class="col-md-4 mb-4 mb-lg-o">
-            <div class="hotel-items">
-              <img src="./images/background-img.jpg" class="img-fluid" />
-              <div class="hotel-content">
-                <span class="hotel-name">Hotel Annapurna</span>
-                <br />
-                <span class="hotel-address"> Bouddha,Ktm</span>
-                <br />
-                <span class="hotel-price">Rs.200/hr</span>
+        <div class="d-flex flex-row mb-2">
+          <div class="location_title p-2">
+            <h6 id="bhaktapur" onclick="showBhaktapur()">Bhaktapur</h6>
+          </div>
+          <div class="location_title p-2">
+            <h6 id="lalitpur" onclick="showLalitpur()">Lalitpur</h6>
+          </div>
+          <div class="location_title p-2">
+            <h6 id="kathmandu" onclick=" showKathmandu()">Kathmandu</h6>
+          </div>
+        </div>
+
+        <!-- Bhaktapur Top Places -->
+        <div id="bhaktapur_top_places">
+          <div class="row m-0">
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box" >
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Sagarmatha</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/Bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Mount Everest</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mb-4 mb-lg-o">
-            <div class="hotel-items">
-              <img src="./images/background-img.jpg" class="img-fluid" />
-              <div class="hotel-content">
-                <span class="hotel-name">Hotel Sagarmatha</span>
-                <br />
-                <span class="hotel-address"> Bouddha,Ktm</span>
-                <br />
-                <span class="hotel-price">Rs.200/hr</span>
+          <!-- See more option -->
+          <div id="see-more"> See more</div>
+           <div id="see-less" >See less</div>
+
+        </div>
+
+        <!-- Lalitpur Top Places -->
+        <div id="lalitpur_top_places">
+          <div class="row m-0">
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Sagarmatha</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/lalitpur.jpeg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Mount Everest</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mb-4 mb-lg-o">
-            <div class="hotel-items">
-              <img src="./images/background-img.jpg" class="img-fluid" />
-              <div class="hotel-content">
-                <span class="hotel-name">Hotel Mount Everest</span>
-                <br />
-                <span class="hotel-address"> Bouddha,Ktm</span>
-                <br />
-                <span class="hotel-price">Rs.200/hr</span>
+           <!-- See more option for Lalitpur -->
+           <div id="lalitpur-see-more"> See more</div>
+           <div id="lalitpur-see-less" >See less</div>
+
+        </div>
+
+        <!-- Kathmandu Top Places -->
+        <div id="kathmandu_top_places">
+          <div class="row m-0">
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Sagarmatha</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Annapurna</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o box">
+              <div class="hotel-items">
+                <img src="./images/kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel Mount Everest</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- See more for Kathmandu -->
+          <div id="kathmandu-see-more"> See more</div>
+          <div id="kathmandu-see-less" >See less</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Searches -->
+    <section class="popular_searches_wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h3>Popular Searches</h3>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row mb-2">
+          <div class="location_title p-2">
+            <h6 id="popular_bhaktapur" onclick="popularBhaktapur()">Bhaktapur</h6>
+          </div>
+          <div class="location_title p-2">
+            <h6 id="popular_lalitpur" onclick="popularLalitpur()">Lalitpur</h6>
+          </div>
+          <div class="location_title p-2">
+            <h6 id="popular_kathmandu" onclick="popularKathmandu()">Kathmandu</h6>
+          </div>
+        </div>
+
+        <!-- Bhaktapur top searches -->
+        <div id="bhaktapur_popular_searches">
+          <div class="row m-0">
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+                  <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                  <div class="hotel-items">
+                    <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                    <div class="hotel-content">
+                      <span class="hotel-name">Hotel ABC</span>
+                      <br />
+                      <span class="hotel-address"> Bouddha,Ktm</span>
+                      <br />
+                      <span class="hotel-price">Rs.200/hr</span>
+                      <br>
+                      <span class="hotel-ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                      </span>
+                      <br>
+                      <span class="hotel-speciality">
+                        <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                        <i class="fas fa-bone"></i> Pet friendly
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                        <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+                      <div class="hotel-items">
+                        <img src="./images/popular-bhaktapur.jpg" class="img-fluid" />
+                        <div class="hotel-content">
+                          <span class="hotel-name">Hotel ABC</span>
+                          <br />
+                          <span class="hotel-address"> Bouddha,Ktm</span>
+                          <br />
+                          <span class="hotel-price">Rs.200/hr</span>
+                          <br>
+                          <span class="hotel-ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                          </span>
+                          <br>
+                          <span class="hotel-speciality">
+                            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                            <i class="fas fa-bone"></i> Pet friendly
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+</div>
+ <!-- See more option -->
+ <div id="PSB-see-more"> See more</div>
+ <div id="PSB-see-less" >See less</div>
+</div>
+
+<!-- Lalitpur popular searches -->
+<div id="lalitpur_popular_searches">
+  <div class="row m-0">
+    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+      <div class="hotel-items">
+        <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+        <div class="hotel-content">
+          <span class="hotel-name">Hotel ABC</span>
+          <br />
+          <span class="hotel-address"> Bouddha,Ktm</span>
+          <br />
+          <span class="hotel-price">Rs.200/hr</span>
+          <br>
+          <span class="hotel-ratings">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+          </span>
+          <br>
+          <span class="hotel-speciality">
+            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+            <i class="fas fa-bone"></i> Pet friendly
+          </span>
+        </div>
+      </div>
+    </div>
+
+          <div class="col-md-4 mb-4 mb-lg-o cont_box">
+          <div class="hotel-items">
+            <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+            <div class="hotel-content">
+              <span class="hotel-name">Hotel ABC</span>
+              <br />
+              <span class="hotel-address"> Bouddha,Ktm</span>
+              <br />
+              <span class="hotel-price">Rs.200/hr</span>
+              <br>
+              <span class="hotel-ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+              </span>
+              <br>
+              <span class="hotel-speciality">
+                <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                <i class="fas fa-bone"></i> Pet friendly
+              </span>
+            </div>
+          </div>
+        </div>
+
+                <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-lalitpur.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+</div>
+<!-- See more option -->
+<div id="PSL-see-more"> See more</div>
+<div id="PSL-see-less" >See less</div>
+</div>
+
+<!-- Kathmandu popular searches -->
+<div id="kathmandu_popular_searches">
+  <div class="row m-0">
+    <div class="col-md-4 mb-4 mb-lg-o cont_box">
+      <div class="hotel-items">
+        <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+        <div class="hotel-content">
+          <span class="hotel-name">Hotel ABC</span>
+          <br />
+          <span class="hotel-address"> Bouddha,Ktm</span>
+          <br />
+          <span class="hotel-price">Rs.200/hr</span>
+          <br>
+          <span class="hotel-ratings">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+          </span>
+          <br>
+          <span class="hotel-speciality">
+            <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+            <i class="fas fa-bone"></i> Pet friendly
+          </span>
+        </div>
+      </div>
+    </div>
+
+          <div class="col-md-4 mb-4 mb-lg-o cont_box">
+          <div class="hotel-items">
+            <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+            <div class="hotel-content">
+              <span class="hotel-name">Hotel ABC</span>
+              <br />
+              <span class="hotel-address"> Bouddha,Ktm</span>
+              <br />
+              <span class="hotel-price">Rs.200/hr</span>
+              <br>
+              <span class="hotel-ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+              </span>
+              <br>
+              <span class="hotel-speciality">
+                <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                <i class="fas fa-bone"></i> Pet friendly
+              </span>
+            </div>
+          </div>
+        </div>
+
+                <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-lg-o cont_box">
+              <div class="hotel-items">
+                <img src="./images/popular-kathmandu.jpg" class="img-fluid" />
+                <div class="hotel-content">
+                  <span class="hotel-name">Hotel ABC</span>
+                  <br />
+                  <span class="hotel-address"> Bouddha,Ktm</span>
+                  <br />
+                  <span class="hotel-price">Rs.200/hr</span>
+                  <br>
+                  <span class="hotel-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="hotel-reviews"> 4.7 (68 reviews)</span>
+                  </span>
+                  <br>
+                  <span class="hotel-speciality">
+                    <i class="fas fa-swimming-pool"></i> Swimming Pool &nbsp;
+                    <i class="fas fa-bone"></i> Pet friendly
+                  </span>
+                </div>
+              </div>
+            </div>
+</div>
+<!-- See more option -->
+<div id="PSK-see-more"> See more</div>
+<div id="PSK-see-less" >See less</div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- What other think of us -->
+    <section id="feedback" class="feedback_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h3>What others think of us</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-left">
+              <h6>Bimash Maskey</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                deleniti ipsam minima, deserunt aut sunt ullam libero, illo
+                nulla velit accusantium ipsa quibusdam ad laborum ex. Possimus
+                quo facilis quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-left">
+              <h6>Bimash Maskey</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                deleniti ipsam minima, deserunt aut sunt ullam libero, illo
+                nulla velit accusantium ipsa quibusdam ad laborum ex. Possimus
+                quo facilis quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-left">
+              <h6>Bimash Maskey</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                deleniti ipsam minima, deserunt aut sunt ullam libero, illo
+                nulla velit accusantium ipsa quibusdam ad laborum ex. Possimus
+                quo facilis quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-left">
+              <h6>Bimash Maskey</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                deleniti ipsam minima, deserunt aut sunt ullam libero, illo
+                nulla velit accusantium ipsa quibusdam ad laborum ex. Possimus
+                quo facilis quis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Section -->
+    <section id="client" class="our_client_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h3>Our Clients</h3>
+          </div>
+        </div>
+
+       
+        <div class="our-client-slider mt-2">
+          <div class="container swiper our-client">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide"><img src="./images/brand-logo.png" height="100" width="100"></div>
+              <div class="swiper-slide"><img src="./images/kia.png" height="100" width="100"></div>
+              <div class="swiper-slide"><img src="./images/mango.jpeg" height="100" width="100"></div>
+              <div class="swiper-slide"><img src="./images/preview.jpg" height="100" width="100"></div>
+              <div class="swiper-slide"><img src="./images/dg.jpg" height="100" width="100"></div>
+              <div class="swiper-slide"><img src="./images/lv.jpg" height="100" width="100"></div>
+
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section  id="footer" class="footer_wrapper mt-3 mt-md-0 pb-0 text-left ">
+      <div class="container pb-3">
+
+        <div class="row">
+          <div class="horizontal_line"></div>
+
+<div class="col-lg-3 col-md-6 footer_content">
+  <h5>Customer Services</h5>
+  <div class="customer_services">
+    <ul class="list-unstyled">
+      <li>My account</li>
+      <li>Live Chat</li>
+      <li>Customer Support</li>
+      <li>Servicing</li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="vertical_line"></div> -->
+
+<div class="col-lg-3 col-md-6 footer_content">
+  <h5>Support</h5>
+  <div class="customer_support">
+    <ul class="list-unstyled">
+      <li>Shipping and Delivery</li>
+      <li>Brands</li>
+      <li>Check  order status</li>
+      <li>Servicing</li>
+    </ul>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6 footer_content ">
+  <h5>Company</h5>
+  <div class="company">
+    <ul class="list-unstyled">
+      <li>My account</li>
+      <li>Live Chat</li>
+      <li>Customer Support</li>
+      <li>Servicing</li>
+    </ul>
+  </div>
+</div>
+<div class="horizontal_line"></div>
+        </div>
+<div class="contact text-center ">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin"></i>
+</div>
       </div>
     </section>
 
@@ -304,6 +1962,11 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script defer src="JavaScript/script.js"></script>
   </body>
 </html>
