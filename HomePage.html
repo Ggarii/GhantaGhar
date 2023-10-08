@@ -6,6 +6,7 @@
     <title>Home</title>
   </head>
 
+
   <!-- Bootstrap CSS CDN links -->
   <link
     rel="stylesheet"
@@ -29,12 +30,12 @@ rel="stylesheet"
 />
 
   <!-- Custom CSS links -->
-  <link rel="stylesheet" href="CSS/SignUp.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
     <!-- Navbar -->
     <header class="header-wrapper">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
@@ -146,7 +147,7 @@ rel="stylesheet"
             <div id="shortstay_booking">
               <form class="row">
                 <div class="purpose">
-                  <select class="form-select form-select-lg mb-3">
+                  <select class="form-select form-select-lg mb-0 ">
                     <option selected>Select your Purpose</option>
                     <option value="birthday">Birthday</option>
                     <option value="rest">Rest</option>
@@ -159,17 +160,17 @@ rel="stylesheet"
                 <div class="location_search">
                   <i class="fas fa-search"></i>
                   <input
-                    class="form-control me-2 form-select-lg mb-3"
+                    class="form-control me-2 form-select-lg mb-3 "
                     type="search"
                     placeholder="   Search by location"
                     aria-label="Search"
                   />
                 </div>
 
-                <div class="col-lg mb-3mb-lg-0">
+                <div class="col-lg mb-3mb-lg-0 inputdata">
                   <input type="text" class="form-control" placeholder="Check in" onfocus="this.type='date'" onblur="this.type='text'" />
                 </div>
-                <div class="col-lg mb-3mb-lg-0">
+                <div class="col-lg mb-3mb-lg-0 inputdata">
                   <select class="form-select">
                     <option selected>Time in hrs</option>
                     <option value="1">1</option>
@@ -180,7 +181,7 @@ rel="stylesheet"
                     <option value="6">6</option>
                   </select>
                 </div>
-                <div class="col-lg mb-3mb-lg-0">
+                <div class="col-lg mb-3mb-lg-0 inputdata">
                   <select class="form-select">
                     <option selected>Adults</option>
                     <option value="1">1</option>
@@ -201,7 +202,7 @@ rel="stylesheet"
             <div id="longstay_booking">
               <form class="row">
                 <div class="purpose">
-                  <select class="form-select form-select-lg mb-3">
+                  <select class="form-select form-select-lg mb-0">
                     <option selected>Select your Purpose</option>
                     <option value="birthday">Birthday</option>
                     <option value="rest">Rest</option>
@@ -221,14 +222,14 @@ rel="stylesheet"
                   />
                 </div>
 
-                <div class="col-lg mb-3mb-lg-0">
+                <div class="col-lg mb-3mb-lg-0 inputdata">
                   <input type="text" class="form-control" placeholder="Check in" onfocus="this.type='date'" onblur="this.type='text'" />
                 </div>
 
-                <div class="col-lg mb-3mb-lg-0">
+                <div class="col-lg mb-3mb-lg-0 inputdata">
                   <input type="text" class="form-control" placeholder="Check out" onfocus="this.type='date'" onblur="this.type='text'"/>
                 </div>
-                <div class="col-lg mb-3mb-lg-0">
+                <div class="col-lg mb-3mb-lg-0 inputdata">
                   <select class="form-select">
                     <option selected>Adults</option>
                     <option value="1">1</option>
@@ -260,7 +261,7 @@ rel="stylesheet"
 
         <div class="d-flex flex-row mb-2">
           <div class="location_title p-2">
-            <h6 id="bhaktapur" onclick="showBhaktapur()">Bhaktapur</h6>
+            <h6 id="bhaktapur"  onclick="showBhaktapur()">Bhaktapur</h6>
           </div>
           <div class="location_title p-2">
             <h6 id="lalitpur" onclick="showLalitpur()">Lalitpur</h6>

@@ -37,23 +37,35 @@ let showShortStay = function () {
 const lalitpur = document.querySelector("#lalitpur_top_places");
 const bhaktapur = document.querySelector("#bhaktapur_top_places");
 const kathmandu = document.querySelector("#kathmandu_top_places");
+let underline_bhaktapur = document.querySelector("#bhaktapur");
+let underline_lalitpur = document.querySelector("#lalitpur");
+let underline_kathmandu = document.querySelector("#kathmandu");
 
 let showLalitpur = function () {
   lalitpur.style.display = "block";
   bhaktapur.style.display = "none";
   kathmandu.style.display = "none";
+  underline_bhaktapur.style.textDecoration = "none";
+  underline_kathmandu.style.textDecoration = "none";
+  underline_lalitpur.style.textDecoration = "underline";
 };
 
 let showBhaktapur = function () {
   lalitpur.style.display = "none";
   bhaktapur.style.display = "block";
   kathmandu.style.display = "none";
+  underline_kathmandu.style.textDecoration = "none";
+  underline_lalitpur.style.textDecoration = "none";
+  underline_bhaktapur.style.textDecoration = "underline";
 };
 
 let showKathmandu = function () {
   kathmandu.style.display = "block";
   bhaktapur.style.display = "none";
   lalitpur.style.display = "none";
+  underline_kathmandu.style.textDecoration = "underline";
+  underline_lalitpur.style.textDecoration = "none";
+  underline_bhaktapur.style.textDecoration = "none";
 };
 
 // For swiper of clients
@@ -211,23 +223,34 @@ seeLessKathmandu.onclick = () => {
 const popular_lalitpur = document.querySelector("#lalitpur_popular_searches");
 const popular_bhaktapur = document.querySelector("#bhaktapur_popular_searches");
 const popular_kathmandu = document.querySelector("#kathmandu_popular_searches");
+let u_bhaktapur = document.querySelector("#popular_bhaktapur");
+let u_lalitpur = document.querySelector("#popular_lalitpur");
+let u_kathmandu = document.querySelector("#popular_kathmandu");
 
 let popularLalitpur = function () {
   popular_lalitpur.style.display = "block";
   popular_bhaktapur.style.display = "none";
   popular_kathmandu.style.display = "none";
+  u_bhaktapur.style.textDecoration = "none";
+  u_lalitpur.style.textDecoration = "underline";
 };
 
 let popularBhaktapur = function () {
   popular_lalitpur.style.display = "none";
   popular_bhaktapur.style.display = "block";
   popular_kathmandu.style.display = "none";
+  u_bhaktapur.style.textDecoration = "underline";
+  u_lalitpur.style.textDecoration = "none";
+  u_kathmandu.style.textDecoration = "none";
 };
 
 let popularKathmandu = function () {
   popular_kathmandu.style.display = "block";
   popular_bhaktapur.style.display = "none";
   popular_lalitpur.style.display = "none";
+  u_bhaktapur.style.textDecoration = "none";
+  u_kathmandu.style.textDecoration = "underline";
+  u_lalitpur.style.textDecoration = "none";
 };
 
 // For see more/less of Popular searches of Bhaktapur

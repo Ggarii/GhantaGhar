@@ -7,8 +7,16 @@
   box-sizing: border-box;
 }
 
-.container {
-  height: 100vh;
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containers {
+  height: 110vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -20,14 +28,20 @@
   background-size: cover;
 }
 
-form {
+.containers form {
   max-width: 1000px;
-  width: 100%;
-  padding: 30px;
+  width: 80vh;
+  padding: 20px;
   border-radius: 6px;
   background: white;
-  position: relative;
+  /* height: fit-content; */
 }
+
+/* #signin {
+  position: fixed;
+  top: 10vh;
+  left: 65vh;
+} */
 
 /* .form {
   position: absolute;
@@ -173,4 +187,473 @@ a.google span {
   font-size: 20px;
   padding-left: 8px;
 }
-/* color: #744920 #9c6f44; */
+
+/* HOMEPAGE CSS*/
+.main-btn {
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 0.15rem;
+  transition: all 0.3s ease-out;
+}
+
+p {
+  /* font-size: 1rem; */
+  color: black;
+}
+
+/* Navbar */
+.header-wrapper .navbar {
+  padding: 0.5rem;
+  background-color: #f5eae7;
+}
+
+.header-wrapper .nav-item {
+  margin: 0 0.5rem;
+}
+
+.header-wrapper .nav-item .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.header-wrapper .nav-item .nav-link:hover,
+.header-wrapper .nav-item .nav-link.active {
+  color: black;
+}
+
+.navbar.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+@keyframes fadeInDown {
+  0% {
+    top: -30%;
+  }
+  15% {
+    top: -15%;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* Banner */
+.banner_wrapper {
+  height: 40.625rem;
+}
+
+.banner_wrapper .banner_background_img .background-img {
+  position: relative;
+  width: 100%;
+}
+
+.banner_background_img {
+  background-image: url(../images/background-img.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.outer_booking_container {
+  background-color: white;
+  padding: 3.125rem 1.875rem;
+  position: relative;
+  /* width: 60rem; */
+}
+
+.booking-area {
+  margin-top: 2rem;
+}
+
+.inputdata {
+  margin-top: 10px;
+}
+
+.purpose input {
+  margin-top: 15px;
+}
+.location_search .fa-search {
+  position: relative;
+  top: 5vh;
+  left: 1vh;
+}
+
+.search-btn .btn {
+  background-color: #9c6f44;
+  border: none;
+  position: absolute;
+  top: 93%;
+  left: 35%;
+  width: 32%;
+  height: 14%;
+}
+
+.outer_booking_container .btn_container {
+  /* width: fit-content; */
+  border: 2px solid black;
+  background-color: #9c6f44;
+  border-radius: 6px;
+  border: none;
+  position: absolute;
+  left: 35%;
+  top: -14%;
+  width: 32%;
+  /* margin-bottom: 2rem; */
+}
+
+#btn_1 {
+  margin: 1rem 0 1rem 1rem;
+  background-color: #9c6f44;
+  border: 1px solid white;
+  border-radius: 6px;
+  width: 10.2rem;
+}
+
+#btn_2 {
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  background-color: #9c6f44;
+  border: 1px solid white;
+  border-radius: 6px;
+  width: 10.2rem;
+}
+
+#btn_1:focus {
+  background-color: #744920;
+}
+
+#btn_2:focus {
+  background-color: #744920;
+}
+
+#longstay_booking {
+  display: none;
+}
+
+/* Top places section */
+.top_places_wrapper {
+  padding: 4rem;
+}
+
+.location_title h6:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hotel-content .hotel-name {
+  font-weight: 500;
+  font-size: large;
+}
+
+.hotel-content .hotel-address {
+  font-size: 15px;
+  top: -50px;
+  color: #363636;
+}
+
+.hotel-content .hotel-price {
+  color: #744920;
+  font-weight: 600;
+  text-shadow: 1px 1px #9c6f44;
+}
+
+.hotel-items .hotel-content .hotel-ratings .fa-star {
+  color: #ffd700;
+}
+
+.hotel-items .hotel-content .hotel-reviews {
+  font-size: small;
+}
+
+.hotel-items .hotel-content .hotel-speciality {
+  font-size: smaller;
+}
+
+.location_title #bhaktapur {
+  text-decoration: underline;
+}
+
+/* For see more */
+#see-more {
+  width: fit-content;
+}
+#see-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.top_places_wrapper .container-fluid .box {
+  display: none;
+}
+
+#see-less {
+  width: fit-content;
+  display: none;
+}
+#see-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.top_places_wrapper .container-fluid .box:nth-child(1),
+.top_places_wrapper .container-fluid .box:nth-child(2),
+.top_places_wrapper .container-fluid .box:nth-child(3) {
+  display: inline-block;
+}
+
+/* See more ends here */
+#lalitpur-see-more {
+  width: fit-content;
+}
+
+#lalitpur-see-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#lalitpur-see-less {
+  width: fit-content;
+  display: none;
+}
+
+#lalitpur-see-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* see more/less of kathmandu */
+#kathmandu-see-more {
+  width: fit-content;
+}
+
+#kathmandu-see-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#kathmandu-see-less {
+  width: fit-content;
+  display: none;
+}
+
+#kathmandu-see-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#lalitpur_top_places {
+  display: none;
+}
+
+#kathmandu_top_places {
+  display: none;
+}
+
+/* Popular Searches */
+.popular_searches_wrapper {
+  padding: 0rem 4rem 4rem 4rem;
+}
+
+#lalitpur_popular_searches {
+  display: none;
+}
+
+#kathmandu_popular_searches {
+  display: none;
+}
+
+.location_title #popular_bhaktapur {
+  text-decoration: underline;
+}
+
+/* See more/less of Bhaktapur popular searches */
+#PSB-see-more {
+  width: fit-content;
+}
+
+#PSB-see-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#PSB-see-less {
+  width: fit-content;
+  display: none;
+}
+
+#PSB-see-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.popular_searches_wrapper .container-fluid .cont_box {
+  display: none;
+}
+
+.popular_searches_wrapper .container-fluid .cont_box:nth-child(1),
+.popular_searches_wrapper .container-fluid .cont_box:nth-child(2),
+.popular_searches_wrapper .container-fluid .cont_box:nth-child(3) {
+  display: inline-block;
+}
+
+/* See more/less of Bhaktapur popular searches */
+#PSL-see-more {
+  width: fit-content;
+}
+
+#PSL-see-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#PSL-see-less {
+  width: fit-content;
+  display: none;
+}
+
+#PSL-see-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* See more/less of kathmandu popular searches */
+#PSK-see-more {
+  width: fit-content;
+}
+
+#PSK-see-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#PSK-see-less {
+  width: fit-content;
+  display: none;
+}
+
+#PSK-see-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Feedback */
+.card h6 {
+  text-align: center;
+  color: #744920;
+  font-weight: 600;
+}
+
+/* Our Clients */
+.our_client_wrapper {
+  padding: 4rem;
+}
+.our-client-slider {
+  background-color: white;
+  padding: 0.25rem;
+}
+
+.our-client img {
+  border-radius: 50%;
+}
+
+/* Footer */
+#footer {
+  background-color: #9c6f44;
+}
+
+.footer_content {
+  /* margin: 0.75rem 3rem 0.25rem 3rem; */
+  color: #ffff;
+  margin-left: 6rem;
+}
+
+.footer_content h6 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.footer_content ul li {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.horizontal_line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+.vertical_line {
+  height: 10rem;
+  width: 1px;
+  background-color: #d4d4d4;
+}
+
+.contact i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: #ffff;
+}
+
+/* Media Queries */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .outer_booking_container .btn_container {
+    width: fit-content;
+  }
+
+  #btn_2 {
+    width: 9.5rem;
+  }
+
+  #btn_1 {
+    width: 9.5rem;
+  }
+  .location_search .fa-search {
+    top: 5.6vh;
+  }
+}
+
+@media (min-width: 599px) and (max-width: 768px) {
+  #btn_2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    margin-top: -8px;
+  }
+  #btn_1 {
+    padding: 5px;
+  }
+  .location_search .fa-search {
+    top: 5.5vh;
+  }
+}
+
+@media (max-width: 600px) {
+  #btn_2 {
+    margin-left: 1.6rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    margin-top: -8px;
+    width: 8rem;
+    font-size: medium;
+  }
+  #btn_1 {
+    padding: 5px;
+    margin-left: 1.6rem;
+    width: 8rem;
+    font-size: medium;
+  }
+  .location_search .fa-search {
+    top: 5.9vh;
+  }
+}
