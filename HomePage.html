@@ -158,12 +158,15 @@ rel="stylesheet"
                 </div>
 
                 <div class="location_search">
-                  <i class="fas fa-search"></i>
+                  <i id ="location_search" class="fas fa-search"></i>
                   <input
                     class="form-control me-2 form-select-lg mb-3 "
                     type="search"
                     placeholder="   Search by location"
                     aria-label="Search"
+                    onfocus="removeIcon()"
+                    onblur="addIcon()"
+                    id="location_input"
                   />
                 </div>
 
@@ -213,14 +216,19 @@ rel="stylesheet"
                 </div>
 
                 <div class="location_search">
-                  <i class="fas fa-search"></i>
+                  <i id ="location_Search" class="fas fa-search"></i>
                   <input
-                    class="form-control me-2 form-select-lg mb-3"
+                    class="form-control me-2 form-select-lg mb-3 "
                     type="search"
                     placeholder="   Search by location"
                     aria-label="Search"
+                    onfocus="removeSearchIcon()"
+                    onblur="addSearchIcon()"
+                    id="location_Input"
                   />
                 </div>
+
+                
 
                 <div class="col-lg mb-3mb-lg-0 inputdata">
                   <input type="text" class="form-control" placeholder="Check in" onfocus="this.type='date'" onblur="this.type='text'" />

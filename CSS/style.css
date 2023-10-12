@@ -77,7 +77,7 @@ form .field {
 .field input {
   width: 100%;
   height: 100%;
-  padding: 0 15px;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 6px;
   font-size: 16px;
@@ -284,6 +284,7 @@ p {
   position: relative;
   top: 5vh;
   left: 1vh;
+  pointer-events: none;
 }
 
 .search-btn .btn {
@@ -326,11 +327,11 @@ p {
   width: 10.2rem;
 }
 
-#btn_1:focus {
+.outer_booking_container .btn_container #btn_1:focus {
   background-color: #744920;
 }
 
-#btn_2:focus {
+.outer_booking_container .btn_container #btn_2:focus {
   background-color: #744920;
 }
 
@@ -656,4 +657,138 @@ p {
   .location_search .fa-search {
     top: 5.9vh;
   }
+}
+
+/* Add Hotel Css */
+.addHotel_container .h1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addHotel_container .icon {
+  margin-right: 10px;
+  font-size: 1.7rem;
+}
+
+/* .addHotel_container .icon-input-group {
+  position: relative;
+}
+
+.addHotel_container .icon-input-group i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+}
+
+.addHotel_container .form-control-with-icon {
+  padding-left: 40px;
+} */
+
+.addHotel_container .hotel-inputname input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputname {
+  display: flex;
+}
+
+.addHotel_container .inputicon {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 4px 0 0 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.addHotel_container .hotel-inputprice {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputprice input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputphoto {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputphoto input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputaddress {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputaddress input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputdistrict {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputdistrict select {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputrooms {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputrooms input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputpurpose {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputpurpose input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputfeatures {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputfeatures input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+#hotelPhoto {
+  font-size: small;
+  height: 2.5rem;
+  padding: 7px;
+}
+
+.nav-addHotel {
+  background-color: #744920;
+}
+
+.btn-addhotel {
+  background-color: #744920;
+  border: none;
+  border-radius: 6px;
+  width: 6rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-addhotel:hover {
+  background-color: #744920;
+}
+
+.addhotel-btncontainer {
+  text-align: center;
+  margin: 1rem;
 }

@@ -378,3 +378,28 @@ PSKseeLess.onclick = () => {
     PSKseeLess.style.display = "none";
   }
 };
+
+// hide search icon
+const hideSearch = document.querySelector("#location_search");
+const showSearch = document.querySelector("#location_input");
+
+let removeIcon = function () {
+  hideSearch.style.opacity = "0";
+};
+let addIcon = function () {
+  if (showSearch.value === "") {
+    hideSearch.style.opacity = "1";
+  }
+};
+
+const hideSearchIcon = document.querySelector("#location_Search");
+const showSearchIcon = document.querySelector("#location_Input");
+
+let removeSearchIcon = function () {
+  hideSearchIcon.style.opacity = "0";
+};
+let addSearchIcon = function () {
+  if (showSearchIcon.value === "") {
+    hideSearchIcon.style.opacity = "1";
+  }
+};
