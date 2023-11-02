@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Booking</title>
+    <!-- Include Bootstrap CSS and JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <style>
+      .form-container {
+        border: 0.5px solid #d3d3d4;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group .btn {
+        margin-left: 10px;
+      }
+
+      .hotel-card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      id="navbook"
+      style="background-color: #744920; margin-bottom: 4rem"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="/images/logo.jpg"
+          alt="Bootstrap"
+          width="60"
+          height="50"
+          style="padding-left: 10px"
+        />
+      </a>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="form-container" style="padding: 0">
+            <div>
+              <h2
+                class="mb-4"
+                style="
+                  background-color: #744920;
+                  color: white;
+                  border-radius: 6px;
+                  padding: 0.5rem;
+                "
+              >
+                Enter Your Details
+              </h2>
+            </div>
+            <div style="padding: 1rem">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    style="width: 73%"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    style="width: 73%"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone No.</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      style="border-radius: 6px"
+                      required
+                    />
+                    <div style="width: 6rem"></div>
+                    <button
+                      class="btn btn-primary otp-btn"
+                      style="
+                        border-radius: 6px;
+                        border: none;
+                        background-color: #744920;
+                      "
+                    >
+                      Send OTP
+                    </button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="otp">Enter OTP code</label>
+                  <div style="display: flex; justify-content: space-between">
+                    <div style="display: flex; gap: 1rem">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="digit1"
+                        style="width: 2rem"
+                        maxlength="1"
+                        required
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="digit2"
+                        style="width: 2rem"
+                        maxlength="1"
+                        required
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="digit3"
+                        style="width: 2rem"
+                        maxlength="1"
+                        required
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="digit4"
+                        style="width: 2rem"
+                        maxlength="1"
+                        required
+                      />
+                    </div>
+                    <div style="width: 6rem"></div>
+                    <button
+                      class="btn btn-primary otp-btn"
+                      style="
+                        border-radius: 6px;
+                        border: none;
+                        background-color: #744920;
+                      "
+                    >
+                      Verify OTP
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="hotel-card">
+            <div style="display: flex; justify-content: space-between">
+              <div>
+                <h3>Hotel XYZ</h3>
+                <p
+                  style="
+                    background-color: #744920;
+                    width: fit-content;
+                    color: white;
+                    padding: 5px;
+                  "
+                >
+                  3.9 <i class="far fa-star"></i>
+                </p>
+                <p style="font-weight: 500">1 night</p>
+              </div>
+              <img
+                src="images/Bhaktapur.jpg"
+                alt="Hotel Image"
+                class="hotel-img"
+                width="200"
+                height="auto"
+              />
+            </div>
+            <br /><br />
+            <div style="display: flex">
+              <div style="display: flex; justify-content: flex-start">
+                <i class="fas fa-calendar-alt" style="margin-top: 4px"></i>
+                <p
+                  style="
+                    margin-left: 0.5rem;
+                    font-weight: 500;
+                    margin-right: 1.5rem;
+                  "
+                >
+                  Mon,28 Nov-Tue,29 Nov
+                </p>
+              </div>
+              <div style="border-left: 0.5px solid #666362; height: 1.5rem">
+                <p>&nbsp; &nbsp;1 Room</p>
+              </div>
+            </div>
+
+            <hr />
+            <div style="display: flex; justify-content: space-between">
+              <p>Room Price for 1 night</p>
+              <p style="font-weight: 500">Rs1000</p>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+              <p>Discount</p>
+              <p style="font-weight: 500">-Rs200</p>
+            </div>
+            <hr />
+            <div style="display: flex; justify-content: space-between">
+              <p>
+                Total Amount
+                <br />
+                <span style="color: #666362; font-size: 0.8rem"
+                  >including VAT</span
+                >
+              </p>
+              <p style="font-weight: 500">Rs800</p>
+            </div>
+            <div
+              class="book-button"
+              style="text-align: center; margin-top: 20px"
+            >
+              <button
+                class="btn btn-success"
+                style="
+                  background-color: #744920;
+                  border: none;
+                  font-weight: 600;
+                  padding-left: 4rem;
+                  padding-right: 4rem;
+                "
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script defer src="JavaScript/script.js"></script>
+</html>

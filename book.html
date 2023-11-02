@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      id="navbook"
+      style="background-color: #744920"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="/images/logo.jpg"
+          alt="Bootstrap"
+          width="60"
+          height="50"
+          style="padding-left: 10px"
+        />
+      </a>
+    </nav>
+
+    <!-- slides of pictures of hotel -->
+    <!-- <section id="hotelpics_slider_container">
+      <div class="container hotelpics_slider">
+        <div class="swiper card_slider">
+          <div class="swiper_wrapper">
+            <div class="swiper_slide">
+              <div class="image_box">
+                <img src="images/slide1.jpg" height="100" width="100" />
+              </div>
+            </div>
+            <div class="swiper_slide">
+              <div class="image_box">
+                <img src="images/slide2.jpg" height="100" width="100" />
+              </div>
+            </div>
+            <div class="swiper_slide">
+              <div class="image_box">
+                <img src="images/slide3.jpg" height="100" width="100" />
+              </div>
+            </div>
+            <div class="swiper_slide">
+              <div class="image_box">
+                <img src="images/slide4.jpg" height="100" width="100" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="hotel_pics">
+      <div class="images">
+        <img src="images/slide1.jpg" alt="img1">
+        <img src="images/slide2.jpg" alt="img2">
+        <img src="images/slide3.jpg" alt="img3">
+        <img src="images/img-1.jpg" alt="img4">
+        <img src="images/img-10.jpg" alt="img5">
+        <img src="images/img-4.jpg" alt="img6">
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="booking_form">
+      <h1 class="text-center">Book Here</h1>
+      <h5 class="text-center">enjoy your stay</h4>
+
+        <!-- Room Selection -->
+        <div class="container room_selection_container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="container">
+                <div class="row">
+              <h1 class="hotel_name_title">Hotel XYZ</h1>
+              <h6>Boudha, Ktm</h6>
+              <br>
+              <h3>Description</h3>
+              <p>Comfortable sitting areas, television, AC, spa</p>
+              <p style="font-weight: 500; margin-bottom: -15px; font-size: 1.5rem;">Choose your room</p>
+
+              <div class="col-md-12">
+                <div class="card">
+    
+                  <div class="card-body">
+                    <div class="card-header">
+                    <p >Please select from below</p>
+                    </div>
+                    <h4 class="card-title">Normal</h4>
+                    <div class="flex_cont">
+                    <p class="card-text">
+                      Tv AC double bed
+                    </p>
+                    <img
+                    src="images/lalitpur.jpeg"
+                    class="card-img"
+                    alt="Simple Room"
+                    
+                  />
+                  </div>
+                  <div class="card-footer">
+                    <p>NPR 1322</p>
+                    <button>Select</button>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card" style="max-width: 600px; ;">
+    
+                  <div class="card-body">
+                    <div class="card-header">
+                    <p >Please select from below</p>
+                    </div>
+                    <h4 class="card-title">Standard</h4>
+                    <div class="flex_cont">
+                    <p class="card-text">
+                      Tv AC double bed
+                    </p>
+                    <img
+                    src="images/lalitpur.jpeg"
+                    class="card-img"
+                    
+                  />
+                  </div>
+                  <div class="card-footer">
+                    <p>NPR 1500</p>
+                    <button>Select</button>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card" style="max-width: 600px; ">
+    
+                  <div class="card-body">
+                    <div class="card-header">
+                    <p >Please select from below</p>
+                    </div>
+                    <h4 class="card-title">Premium</h4>
+                    <div class="flex_cont">
+                    <p class="card-text">
+                      Tv AC double bed
+                    </p>
+                    <img
+                    src="images/lalitpur.jpeg"
+                    class="card-img"
+                    
+                  />
+                  </div>
+                  <div class="card-footer">
+                    <p>NPR 2000</p>
+                    <button>Select</button>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center" style="background-color: #9c6f44; padding: 4px;">
+                        <h5 class="card-title" style="color: white; padding: 4px">Login to Get Special Offers</h5>
+                        <button class="btn btn-primary" style="background-color:#744920; border: none;margin-right: 4px;">LOGIN</button>
+                      </div>
+                      <p class="card-text" style="font-size: 1.5rem; margin-top: 4px;"> NPR 1300</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="date" class="form-control" id="reservedDate" style="margin-bottom: 8px;">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="guests" placeholder="1 room">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="room-type-box">
+                        <p style="border: 1px solid black; display: flex; justify-content: space-between; margin-top: 1rem; padding: 0.3rem; font-size: 1.2rem; font-weight: 400; border-radius: 6px;">Normal
+                        <i class="bx bx-edit" style="font-size: 1.5rem;"></i></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="coupon">Apply Coupon</label>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                        <input type="text" class="form-control" id="coupon">
+                        </div>
+                        </div>
+                      </div>
+                      <hr> 
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text">Total Price
+                          <br>
+                          (including tax)
+                        </p>
+                        <p class="card-text" style="font-weight: 550;">NPR 1300</p>
+                      </div>
+                      <div class="text-center mt-3">
+                        <button class="btn btn-success" style="background-color: #9c6f44; border: none;">Continue to book</button> 
+                      </div>  
+                        </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+    <section  id="footer" class="footer_wrapper mt-3 mt-md-0 pb-0 text-left ">
+      <div class="container pb-3">
+
+        <div class="row">
+          <div class="horizontal_line"></div>
+
+<div class="col-lg-3 col-md-6 footer_content">
+  <h5>Customer Services</h5>
+  <div class="customer_services">
+    <ul class="list-unstyled">
+      <li>My account</li>
+      <li>Live Chat</li>
+      <li>Customer Support</li>
+      <li>Servicing</li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="vertical_line"></div> -->
+
+<div class="col-lg-3 col-md-6 footer_content">
+  <h5>Support</h5>
+  <div class="customer_support">
+    <ul class="list-unstyled">
+      <li>Shipping and Delivery</li>
+      <li>Brands</li>
+      <li>Check  order status</li>
+      <li>Servicing</li>
+    </ul>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6 footer_content ">
+  <h5>Company</h5>
+  <div class="company">
+    <ul class="list-unstyled">
+      <li>My account</li>
+      <li>Live Chat</li>
+      <li>Customer Support</li>
+      <li>Servicing</li>
+    </ul>
+  </div>
+</div>
+<div class="horizontal_line"></div>
+        </div>
+<div class="contact text-center ">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin"></i>
+</div>
+      </div>
+    </section>
+
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Swiper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script defer src="JavaScript/script.js"></script>
+</html>

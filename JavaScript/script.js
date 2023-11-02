@@ -22,15 +22,21 @@ pwShowHide.forEach((eyeIcon) => {
 // For long stay button of homepage
 const longStay = document.querySelector("#longstay_booking");
 const shortStay = document.querySelector("#shortstay_booking");
+const shortStayButton = document.querySelector("#btn_1");
+const longStayButton = document.querySelector("#btn_2");
 
 let showLongStay = function () {
   longStay.style.display = "block";
   shortStay.style.display = "none";
+  longStayButton.style.backgroundColor = "#744920";
+  shortStayButton.style.backgroundColor = "#9c6f44";
 };
 
 let showShortStay = function () {
   longStay.style.display = "none";
   shortStay.style.display = "block";
+  shortStayButton.style.backgroundColor = "#744920";
+  longStayButton.style.backgroundColor = "#9c6f44";
 };
 
 // To toggle between Bhaktapur, Lalitpur and Kathmandu top places
@@ -403,3 +409,13 @@ let addSearchIcon = function () {
     hideSearchIcon.style.opacity = "1";
   }
 };
+
+// For slider of booking form
+var swiper = new Swiper(".card_slider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
