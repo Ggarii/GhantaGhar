@@ -19,11 +19,26 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
+
+    <style>
+      .fixed-filter {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: #fff;
+        padding: 15px;
+      }
+
+      .scrollable-cards {
+        overflow-y: auto;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-12 mb-lg-0 mb-4">
+        <div class="col-lg-3 col-md-12 mb-lg-0 mb-4 fixed-filter">
           <nav
             class="navbar navbar-expand-lg navbar-light bg-white rounded shadow"
           >
@@ -73,7 +88,7 @@
           </nav>
         </div>
 
-        <div class="col-lg-9 col-md-12 px-4">
+        <div class="col-lg-9 col-md-12 px-4 scrollable-cards">
           <div class="card mb-4 border-0 shadow">
             <div class="row g-0 p-3 align-items-center">
               <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
