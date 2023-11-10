@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Admin Dashboard</title>
+    <style>
+      /* #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+      }
+
+      #wrapper.toggled #page-content-wrapper {
+        margin-left: 0;
+      } */
+      #wrapper {
+        height: 100vh;
+        overflow-x: hidden;
+        transition: all 0.5s;
+      }
+
+      #wrapper.toggled {
+        margin-left: -300px; /*  width of  sidebar */
+      }
+
+      #sidebar-wrapper {
+        height: 100%;
+        position: fixed;
+        width: 300px; /*  width of  sidebar */
+        background-color: #9c6f44;
+      }
+
+      #sidebar-wrapper a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        background-color: #9c6f44;
+      }
+
+      #sidebar-wrapper a:hover {
+        background-color: #744920;
+      }
+
+      #sidebar-wrapper a.active {
+        background-color: #744920;
+        border: none;
+      }
+
+      #page-content-wrapper {
+        margin-left: 300px; /*  width of  sidebar */
+        overflow-y: auto;
+      }
+
+      #search-form {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      #search-input {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      #search-button {
+        border: none;
+        color: black;
+        padding: 5px 14px;
+        cursor: pointer;
+      }
+      .sidebar-icon {
+        margin-right: 15px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading text-white">
+          <div class="d-flex mt-4">
+            <img
+              src="images/logoo.jpg"
+              height="40"
+              width="40"
+              style="margin-left: 0.5rem; margin-right: 0.5rem"
+            />
+            <h2>Ghantaghar</h2>
+          </div>
+        </div>
+
+        <div class="d-flex mt-4 mb-4">
+          <div
+            class="position-relative"
+            style="padding-left: 15px; padding-right: 10px"
+          >
+            <img
+              class="rounded-circle"
+              src="images/dg.jpg"
+              alt=""
+              style="width: 40px; height: 40px"
+            />
+            <div
+              class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"
+            ></div>
+          </div>
+          <div class="ms-3">
+            <h6 class="mb-0">John Doe</h6>
+            <span>Admin</span>
+          </div>
+        </div>
+
+        <div class="list-group list-group-flush">
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-white active"
+          >
+            <span><i class="fas fa-tachometer-alt sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Dashboard</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-hotel sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Hotels</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-keyboard sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Reserve Request</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-table sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Contact Admin</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-chart-bar sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">FAQ</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-file-alt sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Pages</span></a
+          >
+        </div>
+      </div>
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper" style="width: calc(100% - 300px)">
+        <nav
+          class="navbar navbar-expand-lg navbar-light border-bottom"
+          style="background-color: #9c6f44"
+        >
+          <button class="btn btn-link" id="menu-toggle">
+            <i style="color: white" class="fas fa-bars"></i>
+          </button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <div id="search-form">
+                  <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search..."
+                  />
+                  <button id="search-button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="nav-item dropdown mt-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span style="color: white">John Doe</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <h2 class="mt-4">Table Content</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Column 1</th>
+                <th scope="col">Column 2</th>
+                <th scope="col">Column 2</th>
+                <th scope="col">Column 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table content -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#menu-toggle").click(function () {
+          $("#wrapper").toggleClass("toggled");
+        });
+      });
+
+      // $(document).ready(function () {
+      //   $("#menu-toggle").click(function () {
+      //     $("#wrapper").toggleClass("toggled");
+      //     if ($("#wrapper").hasClass("toggled")) {
+      //       $("#sidebar-wrapper").animate({ marginLeft: "0" }, 300);
+      //     } else {
+      //       $("#sidebar-wrapper").animate({ marginLeft: "-300px" }, 300);
+      //     }
+      //   });
+      // });
+    </script>
+  </body>
+</html>
