@@ -67,8 +67,8 @@
       }
 
       #search-input {
-        flex: 1;
-        margin-right: 10px;
+        border-radius: 6px;
+        border: none;
       }
 
       #search-button {
@@ -177,18 +177,25 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <div id="search-form">
+                <div class="input-group">
                   <input
                     type="text"
+                    class="form-control"
                     id="search-input"
                     placeholder="Search..."
                   />
-                  <button id="search-button">
-                    <i class="fas fa-search"></i>
-                  </button>
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-light"
+                      type="button"
+                      id="search-button"
+                    >
+                      <i class="fas fa-search" style="font-size: 1.5rem"></i>
+                    </button>
+                  </div>
                 </div>
               </li>
-              <li class="nav-item dropdown mt-1">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"

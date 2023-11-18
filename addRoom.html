@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Admin Dashboard</title>
+    <style>
+      /* #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+      }
+
+      #wrapper.toggled #page-content-wrapper {
+        margin-left: 0;
+      } */
+      #wrapper {
+        height: 100vh;
+        overflow-x: hidden;
+        transition: all 0.5s;
+      }
+
+      #wrapper.toggled {
+        margin-left: -300px; /*  width of  sidebar */
+      }
+
+      #sidebar-wrapper {
+        height: 100%;
+        position: fixed;
+        width: 300px; /*  width of  sidebar */
+        background-color: #9c6f44;
+      }
+
+      #sidebar-wrapper a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        background-color: #9c6f44;
+      }
+
+      #sidebar-wrapper a:hover {
+        background-color: #744920;
+      }
+
+      #sidebar-wrapper a.active {
+        background-color: #744920;
+        border: none;
+      }
+
+      #page-content-wrapper {
+        margin-left: 300px; /*  width of  sidebar */
+        overflow-y: auto;
+      }
+
+      #search-form {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      #search-input {
+        border-radius: 6px;
+        border: none;
+      }
+
+      #search-button {
+        border: none;
+        color: black;
+        padding: 5px 14px;
+        cursor: pointer;
+      }
+      .sidebar-icon {
+        margin-right: 15px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading text-white">
+          <div class="d-flex mt-4">
+            <img
+              src="images/logoo.jpg"
+              height="40"
+              width="40"
+              style="margin-left: 0.5rem; margin-right: 0.5rem"
+            />
+            <h2>Ghantaghar</h2>
+          </div>
+        </div>
+
+        <div class="d-flex mt-4 mb-4">
+          <div
+            class="position-relative"
+            style="padding-left: 15px; padding-right: 10px"
+          >
+            <img
+              class="rounded-circle"
+              src="images/dg.jpg"
+              alt=""
+              style="width: 40px; height: 40px"
+            />
+            <div
+              class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"
+            ></div>
+          </div>
+          <div class="ms-3">
+            <h6 class="mb-0">John Doe</h6>
+            <span>Admin</span>
+          </div>
+        </div>
+
+        <div class="list-group list-group-flush">
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-white active"
+          >
+            <span><i class="fas fa-tachometer-alt sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Dashboard</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-hotel sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Hotels</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-keyboard sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Reserve Request</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-table sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Contact Admin</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-chart-bar sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">FAQ</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-white"
+            ><span><i class="fas fa-file-alt sidebar-icon"></i></span
+            ><span style="font-size: 1.2rem">Pages</span></a
+          >
+        </div>
+      </div>
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper" style="width: calc(100% - 300px)">
+        <nav
+          class="navbar navbar-expand-lg navbar-light border-bottom"
+          style="background-color: #9c6f44"
+        >
+          <button class="btn btn-link" id="menu-toggle">
+            <i style="color: white" class="fas fa-bars"></i>
+          </button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="search-input"
+                    placeholder="Search..."
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-light"
+                      type="button"
+                      id="search-button"
+                    >
+                      <i class="fas fa-search" style="font-size: 1.5rem"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span style="color: white">John Doe</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container mt-5 mb-5">
+          <h2 class="mt-4 mb-4">Create/Edit Your Model</h2>
+          <form id="addRoomForm">
+            <div class="form-group">
+              <label for="description" class="font-weight-bold"
+                >Description:</label
+              >
+              <textarea
+                class="form-control"
+                id="description"
+                name="description"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="roomType" class="font-weight-bold">Room Type:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="roomType"
+                name="roomType"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="numBeds" class="font-weight-bold"
+                >Number of Beds:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="numBeds"
+                name="numBeds"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="numGuests" class="font-weight-bold"
+                >Number of Guests:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="numGuests"
+                name="numGuests"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="roomPurpose" class="font-weight-bold"
+                >Select Purpose for Room:</label
+              >
+              <select class="form-control" id="roomPurpose" name="roomPurpose">
+                <option value="shortStay">Short Stay</option>
+                <option value="longStay">Long Stay</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="shortstayprice" class="font-weight-bold"
+                >Short Stay Price:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="shortstayprice"
+                name="shortstayprice"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="longstayprice" class="font-weight-bold"
+                >Long Stay Price:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="longstayprice"
+                name="longstayprice"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="purposes" class="font-weight-bold"
+                >Select Purposes for room:</label
+              ><br />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="purposes[]"
+                  id="party"
+                  value="party"
+                />
+                <label class="form-check-label" for="party">Party</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="purposes[]"
+                  id="birthday"
+                  value="birthday"
+                />
+                <label class="form-check-label" for="birthday"
+                  >Birthday Celebration</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="purposes[]"
+                  id="personal"
+                  value="personal"
+                />
+                <label class="form-check-label" for="personal"
+                  >Personal Time</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="purposes[]"
+                  id="familystay"
+                  value="familystay"
+                />
+                <label class="form-check-label" for="familystay"
+                  >Family Stay</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="purposes[]"
+                  id="officialstay"
+                  value="officialstay"
+                />
+                <label class="form-check-label" for="officialstay"
+                  >Official Stay</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="purposes[]"
+                  id="others"
+                  value="others"
+                />
+                <label class="form-check-label" for="others">Others</label>
+              </div>
+
+              <!-- End of purposes -->
+            </div>
+            <div class="form-group">
+              <label for="features" class="font-weight-bold"
+                >Features for Room:</label
+              ><br />
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="tv"
+                      name="features[]"
+                      value="TV"
+                    />
+                    <label
+                      class="form-check-label d-flex align-items-center"
+                      for="tv"
+                    >
+                      <i class="fas fa-tv mr-2"></i> TV
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="ac"
+                      name="features[]"
+                      value="AC"
+                    />
+                    <label
+                      class="form-check-label d-flex align-items-center"
+                      for="ac"
+                    >
+                      <i class="fas fa-snowflake mr-2"></i> AC
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="telephone"
+                      name="features[]"
+                      value="Telephone"
+                    />
+                    <label
+                      class="form-check-label d-flex align-items-center"
+                      for="telephone"
+                    >
+                      <i class="fas fa-phone-alt mr-2"></i> Telephone
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="fridge"
+                      name="features[]"
+                      value="Fridge"
+                    />
+                    <label
+                      class="form-check-label d-flex align-items-center"
+                      for="fridge"
+                    >
+                      <i class="fas fa-door-closed mr-2"></i> Fridge
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- End of features -->
+            </div>
+            <div class="form-group">
+              <label for="isAvailable" class="font-weight-bold"
+                >Is Available:</label
+              ><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="isAvailable"
+                  id="available"
+                  value="yes"
+                />
+                <label class="form-check-label" for="available">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="isAvailable"
+                  id="notAvailable"
+                  value="no"
+                />
+                <label class="form-check-label" for="notAvailable">No</label>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="
+                background-color: #9c6f44;
+                border: none;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              "
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#menu-toggle").click(function () {
+          $("#wrapper").toggleClass("toggled");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#addRoomForm").submit(function (e) {
+          e.preventDefault(); // Prevents the default form submission
+        });
+      });
+    </script>
+  </body>
+</html>
