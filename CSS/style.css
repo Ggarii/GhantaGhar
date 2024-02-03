@@ -656,6 +656,17 @@ p {
   .location_search .fa-search {
     top: 5.9vh;
   }
+
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  /* section {
+    margin-bottom: 10rem;
+  } */
 }
 
 /* Add Hotel Css */

@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Add Hotel Css */
+/* .addHotel_container{
+}
+
+.addHotel_container .h1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addHotel_container .icon {
+  font-size: 1.7rem;
+}
+
+
+.addHotel_container .hotel-inputname input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputname {
+  display: flex;
+}
+
+.addHotel_container .inputicon {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 4px 0 0 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.addHotel_container .hotel-inputprice {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputprice input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputphoto {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputphoto input {
+  border: 1px solid rgba(14, 10, 10, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputaddress {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputaddress input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputdistrict {
+  display: flex;
+  margin-left: 0;
+  width: 425px;
+}
+
+.addHotel_container .hotel-inputdistrict select {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputtype {
+  display: flex;
+}
+.addHotel_container .hotel-inputtype input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputrooms {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputrooms input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputpurpose {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputpurpose input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.addHotel_container .hotel-inputfeatures {
+  display: flex;
+}
+
+.addHotel_container .hotel-inputfeatures input {
+  border: 1px solid rgba(127, 123, 123, 0.437);
+  border-radius: 0px 4px 4px 0px;
+}
+
+#hotelPhoto {
+  font-size: small;
+  height: 2.5rem;
+  padding: 7px;
+}
+
+.nav-addHotel {
+  background-color: #744920;
+}
+
+
+
+.addhotel-btncontainer {
+  text-align: center;
+  margin: 1rem;
+}
+
+#navbook {
+  background-color: #744920;
+}
+
+*/
+
+/* Dashboard */
+/*Css of hotels */
+
+.add_hotel_link {
+  background-color: #9c6f44;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.vendor_form {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.h-box {
+  margin-left: 20px;
+}
+.vendor-hotel-title {
+  text-decoration: underline;
+}
+
+.view-btn {
+  border: 2px solid white;
+  padding: 8px;
+  background-color: #744920;
+  border-radius: 5px;
+}
+
+.view-btn:hover {
+  background-color: #af7741;
+}
+
+/* Add hotel form */
+.addHotelForm label {
+  font-weight: 600;
+  color: black;
+  margin: 4px;
+}
+
+.addHotelForm input {
+  margin-bottom: 1rem;
+}
+
+/* View Hotel Css */
+.hotel-image1 {
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 250px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.image1 {
+  margin-top: 15px;
+}
+
+.add-img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-left: 50px;
+  width: 600px;
+}
+
+.h-image-bt {
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.vendor-hotel-container {
+  margin-left: 50px;
+  padding-top: 40px;
+}
+
+#hotel_pics {
+  margin-left: 5px;
+}
+
+.hotel_name_title {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.hotel_title {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.para {
+  color: rgb(78, 71, 71);
+}
+
+.room-title {
+  font-weight: 500;
+  margin-bottom: -15px;
+  font-size: 2rem;
+  color: black;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Add Room CSS */
+.addRoom_container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.addRoom_container label {
+  font-weight: 500;
+  color: black;
+}
+
+.addRoombtn {
+  background-color: #9c6f44;
+  border: none;
+  width: 8rem;
+}
+
+.addRoombtn:hover {
+  background-color: #744920;
+}
+
+.btn-group-rr {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.btn-primary-rr {
+  background-color: #9c6f44;
+  color: white;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.btn-primary-rr:hover {
+  background-color: #b78a5f;
+  color: white;
+}
+
+/*Hotels CSS */
+
+.editBtn {
+  background-color: #9c6f44;
+  border: none;
+  width: 10rem;
+  color: #fff;
+}
+
+.editBtn:hover{
+  background-color: #af7741;
+  color: #fff;
+}
+
+.hotel-ratings .fa-star {
+  color: #ffd700;
+}
+
+.btn-addhotel ,.btn-addhotel:focus,.btn-addhotel:active{
+  background-color: #744920;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  width: 6rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-addhotel:hover {
+  background-color: #744920;
+  border: none;
+  color: #fff;
+}
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select id="district" onchange="populateLocations()">
+    <option value="" selected disabled>Select District</option>
+    <option value="kathmandu">Kathmandu</option>
+    <option value="bhaktapur">Bhaktapur</option>
+    <option value="lalitpur">Lalitpur</option>
+  </select>
+  <select id="location">
+    <option value="" selected disabled>Select Location</option>
+    </select>
+
+    <script>
+      var locations={
+        kathmandu:["Bouddha","Kirtipur"],
+        bhaktapur:["Nagarkot","Changu Narayan"],
+        lalitpur:["Kupandole","Kumaripati"]
+      };
+
+      var districtSelect=document.getElementById("district");
+      var locationSelect=document.getElementById("location");
+
+      function populateLocations(){
+        locationSelect.innerHTML='<option value="">Select Location</option>';
+
+        var selectedDistrict=districtSelect.value;
+        if(selectedDistrict){
+          var selectedLocation=locations[selectedDistrict];
+          selectedLocation.forEach(function(location){
+            var option=document.createElement("option");
+            option.value=location;
+            option.text=location;
+            locationSelect.appendChild(option);
+          });
+            
+          }
+        }
+      
+    </script>
+</body>
+</html>

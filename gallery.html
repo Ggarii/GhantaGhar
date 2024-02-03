@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags, title, and CSS links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Hotel Gallery</h1>
+  <div class="row" id="imageGallery">
+    <!-- Images will be added dynamically here -->
+  </div>
+</div>
+
+<!-- jQuery, Bootstrap, and Fancybox JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+    const imageUrls = [
+  'https://via.placeholder.com/800x600',
+  'https://via.placeholder.com/800x600',
+  'https://via.placeholder.com/800x600',
+  'https://via.placeholder.com/800x600',
+  'https://via.placeholder.com/800x600',
+  'https://via.placeholder.com/800x600'
+
+];
+
+const imageGallery = document.getElementById('imageGallery');
+
+function populateGallery(images) {
+  images.forEach(url => {
+    const imageDiv = document.createElement('div');
+    imageDiv.classList.add('col-lg-4', 'col-md-6', 'col-sm-12');
+
+    const imageLink = document.createElement('a');
+    imageLink.setAttribute('data-fancybox', 'hotel-gallery');
+    imageLink.setAttribute('href', url);
+    
+    const image = document.createElement('img');
+    image.src = url;
+    image.classList.add('img-thumbnail');
+
+    imageLink.appendChild(image);
+    imageDiv.appendChild(imageLink);
+    imageGallery.appendChild(imageDiv);
+  });
+}
+
+populateGallery(imageUrls);
+
+// Fancybox initialization
+$('[data-fancybox="hotel-gallery"]').fancybox({
+  loop: true, // Enable loop for navigation through images
+  buttons: [
+    'slideShow',
+    'fullScreen',
+    'thumbs',
+    'close'
+  ],
+  protect: true // Prevent downloading images
+});
+
+</script>
+</body>
+</html>
